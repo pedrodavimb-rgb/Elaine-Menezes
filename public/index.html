@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dra. Elaine Menezes — Médica Psiquiatra com Pós-graduação em Psiquiatria. Atendimento online humanizado para Depressão, Ansiedade e Transtornos do Humor. Agende sua consulta." />
+  <meta name="keywords" content="psiquiatra online, consulta psiquiatria online, depressão, ansiedade, bipolaridade, transtornos do humor, Dra. Elaine Menezes" />
+  <meta property="og:title" content="Dra. Elaine Menezes — Psiquiatra Online" />
+  <meta property="og:description" content="Atendimento psiquiátrico online humanizado e acolhedor. Agende sua consulta." />
+  <meta property="og:type" content="website" />
+  <title>Dra. Elaine Menezes — Psiquiatra Online</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css?v=12" />
+</head>
+<body>
+
+  <!-- ═══ NAVBAR ═══ -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Menu principal">
+    <div class="nav-container">
+      <a href="#inicio" class="nav-logo" aria-label="Ir para o início">
+        <img src="images/logo.png" alt="Dra. Elaine Menezes — Logo EM" class="logo-img" width="64" height="64" />
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#como-funciona">Como Funciona</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato" class="nav-cta">Agendar Consulta</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu — sibling of the navbar (NOT a child): the navbar gets a
+       backdrop-filter when scrolled, which would otherwise become the
+       containing block for this position:fixed overlay and clip it. -->
+  <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Menu mobile">
+    <ul role="list">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#especialidades">Especialidades</a></li>
+      <li><a href="#como-funciona">Como Funciona</a></li>
+      <li><a href="#depoimentos">Depoimentos</a></li>
+      <li><a href="#contato" class="mobile-cta">Agendar Consulta</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="inicio" aria-label="Apresentação">
+    <div class="hero-bg">
+      <div class="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div class="hero-orb hero-orb-2" aria-hidden="true"></div>
+      <div class="hero-grain" aria-hidden="true"></div>
+    </div>
+    <div class="hero-photo" role="img" aria-label="Dra. Elaine Menezes, psiquiatra, sorrindo"></div>
+    <div class="hero-content">
+      <div class="hero-text" data-animate="fade-up">
+        <span class="hero-eyebrow">Psiquiatria Online · CRM 271321 / SP</span>
+        <h1 class="hero-title">
+          Dra. Elaine<br />
+          <em>Menezes</em>
+        </h1>
+        <div class="hero-divider" aria-hidden="true"><span></span></div>
+        <p class="hero-subtitle">
+          Atendimento <strong>humanizado</strong> para quem busca<br class="br-desktop" />
+          equilíbrio emocional e qualidade de vida.
+        </p>
+        <div class="hero-price" aria-label="Consulta online por R$ 600">
+          <span class="hero-price-dot" aria-hidden="true"></span>
+          <span class="hero-price-text">Consulta online</span>
+          <span class="hero-price-value">R$ 600</span>
+        </div>
+        <div class="hero-actions">
+          <a
+            href="https://wa.me/5593991675990?text=Ol%C3%A1%2C+Dra.+Elaine%21+Gostaria+de+agendar+uma+consulta+online."
+            class="btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Agendar consulta via WhatsApp"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Agendar Consulta
+          </a>
+          <a href="#sobre" class="btn-secondary">Conhecer mais</a>
+        </div>
+        <div class="hero-stats" aria-label="Números da Dra. Elaine">
+          <div class="stat" data-animate="fade-up" data-delay="100">
+            <span class="stat-num" data-count="1000">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Pacientes atendidos</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat" data-animate="fade-up" data-delay="200">
+            <span class="stat-num" data-count="5">0</span><span class="stat-plus">+</span>
+            <span class="stat-label">Anos de experiência</span>
+          </div>
+          <div class="stat-divider" aria-hidden="true"></div>
+          <div class="stat" data-animate="fade-up" data-delay="300">
+            <span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span>
+            <span class="stat-label">Consultas online</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#sobre" class="scroll-hint" aria-label="Rolar para baixo">
+      <div class="scroll-line" aria-hidden="true"></div>
+    </a>
+  </section>
+
+  <!-- ═══ SOBRE ═══ -->
+  <section class="sobre" id="sobre" aria-label="Sobre a Dra. Elaine">
+    <div class="container">
+      <div class="sobre-grid">
+        <div class="sobre-image" data-animate="fade-right">
+          <div class="sobre-img-wrap">
+            <img
+              src="images/foto-preta.jpg?v=2"
+              alt="Dra. Elaine Menezes em pose descontraída com estetoscópio"
+              width="440"
+              height="560"
+              loading="lazy"
+            />
+            <div class="sobre-img-deco" aria-hidden="true"></div>
+          </div>
+        </div>
+        <div class="sobre-text" data-animate="fade-left">
+          <span class="section-eyebrow">Sobre mim</span>
+          <h2 class="section-title">Uma medicina que <em>escuta</em> e acolhe</h2>
+          <p class="sobre-lead">
+            Sou a Dra. Elaine Menezes, médica formada com pós-graduação em Psiquiatria e dedicada ao cuidado integral da saúde mental.
+          </p>
+          <p class="sobre-body">
+            Acredito que cada paciente carrega uma história única. Por isso, minha abordagem vai além da prescrição: busco entender o contexto de vida, os vínculos afetivos e os desafios pessoais de cada pessoa que atendo.
+          </p>
+          <p class="sobre-body">
+            Atendendo de forma <strong>100% online</strong>, ofereço consultas acolhedoras, seguras e com a mesma qualidade de um atendimento presencial — com a praticidade de você poder ser atendido de qualquer lugar do Brasil.
+          </p>
+          <div class="formacao">
+            <h3 class="formacao-titulo">Formação &amp; Credenciais</h3>
+            <ul class="formacao-list" role="list">
+              <li>
+                <div class="form-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+                </div>
+                <div>
+                  <strong>Graduação em Medicina</strong>
+                </div>
+              </li>
+              <li>
+                <div class="form-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+                </div>
+                <div>
+                  <strong>Pós-graduação em Psiquiatria</strong>
+                </div>
+              </li>
+              <li>
+                <div class="form-icon" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+                </div>
+                <div>
+                  <strong>CRM 271321/SP</strong>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <a
+            href="https://wa.me/5593991675990?text=Ol%C3%A1%2C+Dra.+Elaine%21+Gostaria+de+agendar+uma+consulta+online."
+            class="btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+          >Agendar minha consulta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ESPECIALIDADES ═══ -->
+  <section class="especialidades" id="especialidades" aria-label="Especialidades">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-eyebrow">Especialidades</span>
+        <h2 class="section-title">Áreas de <em>atuação</em></h2>
+        <p class="section-desc">Atendimento especializado para quem enfrenta desafios emocionais e psiquiátricos.</p>
+      </div>
+      <div class="esp-grid">
+
+        <article class="esp-card" data-animate="fade-up" data-delay="0">
+          <div class="esp-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12h4l2.5-7 5 14 2.5-7H22"/>
+            </svg>
+          </div>
+          <h3>Bipolaridade</h3>
+          <p>Avaliação cuidadosa e acompanhamento contínuo para estabilizar as oscilações de humor, com um plano de tratamento individualizado que respeita o seu momento e a sua rotina.</p>
+          <ul class="esp-tags" role="list">
+            <li>Transtorno Bipolar I e II</li>
+            <li>Ciclotimia</li>
+            <li>Estabilização do humor</li>
+          </ul>
+        </article>
+
+        <article class="esp-card esp-card--featured" data-animate="fade-up" data-delay="100">
+          <div class="esp-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4l3 3"/>
+            </svg>
+          </div>
+          <h3>Ansiedade</h3>
+          <p>Avaliação e tratamento dos transtornos de ansiedade, com estratégias terapêuticas baseadas em evidências para retomar o controle da sua vida.</p>
+          <ul class="esp-tags" role="list">
+            <li>TAG</li>
+            <li>Síndrome do Pânico</li>
+            <li>Fobia Social</li>
+          </ul>
+        </article>
+
+        <article class="esp-card" data-animate="fade-up" data-delay="200">
+          <div class="esp-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+              <path d="M8 15s1.5 2 4 2 4-2 4-2"/>
+              <line x1="9" y1="9" x2="9.01" y2="9"/>
+              <line x1="15" y1="9" x2="15.01" y2="9"/>
+            </svg>
+          </div>
+          <h3>Depressão</h3>
+          <p>Cuidado integral no tratamento da depressão maior e distimia, com abordagem humanizada que combina medicação e escuta ativa.</p>
+          <ul class="esp-tags" role="list">
+            <li>Depressão Maior</li>
+            <li>Distimia</li>
+            <li>Depressão Pós-parto</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ COMO FUNCIONA ═══ -->
+  <section class="como-funciona" id="como-funciona" aria-label="Como funciona o atendimento online">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-eyebrow">Processo</span>
+        <h2 class="section-title">Como funciona o <em>atendimento online</em></h2>
+        <p class="section-desc">Simples, seguro e no conforto da sua casa.</p>
+      </div>
+      <div class="steps">
+        <div class="step" data-animate="fade-up" data-delay="0">
+          <div class="step-node">
+            <div class="step-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+            </div>
+            <span class="step-num" aria-hidden="true">01</span>
+          </div>
+          <div class="step-content">
+            <h3>Agende pelo WhatsApp</h3>
+            <p>Entre em contato direto com a Dra. Elaine pelo WhatsApp e escolha o melhor horário para você.</p>
+          </div>
+        </div>
+        <div class="step" data-animate="fade-up" data-delay="100">
+          <div class="step-node">
+            <div class="step-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+            </div>
+            <span class="step-num" aria-hidden="true">02</span>
+          </div>
+          <div class="step-content">
+            <h3>Receba o link da consulta</h3>
+            <p>Você receberá o link seguro para a videoconferência com antecedência — sem necessidade de instalar nada.</p>
+          </div>
+        </div>
+        <div class="step" data-animate="fade-up" data-delay="200">
+          <div class="step-node">
+            <div class="step-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+            </div>
+            <span class="step-num" aria-hidden="true">03</span>
+          </div>
+          <div class="step-content">
+            <h3>Consulta acolhedora</h3>
+            <p>Na hora marcada, conecte-se e tenha uma consulta completa, com escuta ativa, avaliação e orientações claras.</p>
+          </div>
+        </div>
+        <div class="step" data-animate="fade-up" data-delay="300">
+          <div class="step-node">
+            <div class="step-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M23 4v6h-6M1 20v-6h6"/><path d="M3.51 9a9 9 0 0114.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0020.49 15"/></svg>
+            </div>
+            <span class="step-num" aria-hidden="true">04</span>
+          </div>
+          <div class="step-content">
+            <h3>Acompanhamento contínuo</h3>
+            <p>Receitas digitais, relatórios médicos e retornos agendados para garantir a continuidade do seu tratamento.</p>
+          </div>
+        </div>
+      </div>
+      <div class="como-cta" data-animate="fade-up">
+        <a
+          href="https://wa.me/5593991675990?text=Ol%C3%A1%2C+Dra.+Elaine%21+Gostaria+de+agendar+uma+consulta+online."
+          class="btn-primary"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Começar agora
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ DEPOIMENTOS ═══ -->
+  <section class="depoimentos" id="depoimentos" aria-label="Depoimentos de pacientes">
+    <div class="container">
+      <div class="section-header" data-animate="fade-up">
+        <span class="section-eyebrow">Depoimentos</span>
+        <h2 class="section-title">O que dizem <em>nossos pacientes</em></h2>
+      </div>
+      <div class="dep-grid" role="list">
+
+        <article class="dep-card" role="listitem" data-animate="fade-up" data-delay="0">
+          <span class="dep-quote-mark" aria-hidden="true">&ldquo;</span>
+          <div class="dep-stars" aria-label="5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <blockquote>
+            <p>Marcar a consulta online foi muito mais simples do que eu imaginava, e me senti acolhida desde o primeiro contato. A Dra. Elaine escuta com atenção e explica tudo com clareza.</p>
+          </blockquote>
+          <footer>
+            <div class="dep-avatar" aria-hidden="true">M</div>
+            <div>
+              <cite class="dep-name">M. R.</cite>
+              <span class="dep-condicao">São Paulo</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="dep-card" role="listitem" data-animate="fade-up" data-delay="100">
+          <span class="dep-quote-mark" aria-hidden="true">&ldquo;</span>
+          <div class="dep-stars" aria-label="5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <blockquote>
+            <p>O atendimento é pontual e muito humano. Em nenhum momento me senti apenas mais um número: me senti realmente ouvido e respeitado durante toda a consulta.</p>
+          </blockquote>
+          <footer>
+            <div class="dep-avatar" aria-hidden="true">J</div>
+            <div>
+              <cite class="dep-name">J. P.</cite>
+              <span class="dep-condicao">Belo Horizonte</span>
+            </div>
+          </footer>
+        </article>
+
+        <article class="dep-card" role="listitem" data-animate="fade-up" data-delay="200">
+          <span class="dep-quote-mark" aria-hidden="true">&ldquo;</span>
+          <div class="dep-stars" aria-label="5 estrelas">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </div>
+          <blockquote>
+            <p>Fazer o acompanhamento à distância me trouxe uma tranquilidade que eu não esperava. O ambiente é reservado, seguro, e o cuidado continua o mesmo entre as consultas.</p>
+          </blockquote>
+          <footer>
+            <div class="dep-avatar" aria-hidden="true">A</div>
+            <div>
+              <cite class="dep-name">A. L.</cite>
+              <span class="dep-condicao">Curitiba</span>
+            </div>
+          </footer>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CTA FINAL ═══ -->
+  <section class="cta-final" id="contato" aria-label="Agendar consulta">
+    <div class="cta-bg" aria-hidden="true">
+      <div class="cta-orb" aria-hidden="true"></div>
+    </div>
+    <div class="container">
+      <div class="cta-content" data-animate="fade-up">
+        <img src="images/logo.png" alt="Logo Dra. Elaine Menezes" width="80" height="80" class="cta-logo" loading="lazy" />
+        <h2 class="cta-title">Dê o primeiro passo<br /><em>para o seu bem-estar</em></h2>
+        <p class="cta-desc">
+          Cuidar da saúde mental é um ato de amor próprio. Agende sua consulta online agora mesmo e comece sua jornada de equilíbrio e qualidade de vida.
+        </p>
+        <a
+          href="https://wa.me/5593991675990?text=Ol%C3%A1%2C+Dra.+Elaine%21+Gostaria+de+agendar+uma+consulta+online."
+          class="btn-primary btn-large"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Agendar consulta pelo WhatsApp"
+        >
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Agendar pelo WhatsApp
+        </a>
+        <p class="cta-note">Atendimento para todo o Brasil · Consultas online · CRM 271321/SP</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="Logo Dra. Elaine Menezes" width="56" height="56" loading="lazy" />
+          <p>Dra. Elaine Menezes<br /><span>Médica com atuação em Psiquiatria · CRM 271321/SP</span></p>
+        </div>
+        <nav class="footer-links" aria-label="Links do rodapé">
+          <a href="#sobre">Sobre</a>
+          <a href="#especialidades">Especialidades</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#depoimentos">Depoimentos</a>
+        </nav>
+        <div class="footer-contact">
+          <p class="footer-contact-title">Agendamento</p>
+          <a
+            href="https://wa.me/5593991675990?text=Ol%C3%A1%2C+Dra.+Elaine%21+Gostaria+de+agendar+uma+consulta+online."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer-wa"
+            aria-label="Agendar consulta pelo WhatsApp"
+          >
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Agendar consulta
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Dra. Elaine Menezes. Todos os direitos reservados.</p>
+        <p class="footer-cfm">As informações deste site têm caráter informativo e não substituem consulta médica.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ FLOATING WHATSAPP ═══ -->
+  <a
+    href="https://wa.me/5593991675990?text=Ol%C3%A1%2C+Dra.+Elaine%21+Gostaria+de+agendar+uma+consulta+online."
+    class="float-wa"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Falar com a Dra. Elaine pelo WhatsApp"
+  >
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <span class="float-wa-tooltip">Agendar consulta</span>
+  </a>
+
+  <script src="js/main.js?v=3" defer></script>
+</body>
+</html>

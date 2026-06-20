@@ -1,0 +1,10 @@
+{
+  "name": "dra-elaine-menezes",
+  "version": "1.0.0",
+  "description": "Site da Dra. Elaine Menezes - Psiquiatra",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  }
+}
