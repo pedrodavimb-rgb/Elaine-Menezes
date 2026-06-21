@@ -9,10 +9,13 @@
   <meta property="og:description" content="Atendimento psiquiátrico online humanizado e acolhedor. Agende sua consulta." />
   <meta property="og:type" content="website" />
   <title>Dra. Elaine Menezes — Psiquiatra Online</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/style.css?v=12" />
+  <!-- Fontes auto-hospedadas (sem Google Fonts) + preload do que aparece primeiro -->
+  <link rel="preload" href="fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="fonts/jost.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" as="image" href="images/foto-hero.jpg?v=3" fetchpriority="high" />
+  <link rel="stylesheet" href="css/fonts.css?v=1" />
+  <link rel="stylesheet" href="css/style.css?v=13" />
 </head>
 <body>
 
