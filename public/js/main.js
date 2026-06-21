@@ -149,3 +149,16 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
 
   window.addEventListener('scroll', setActive, { passive: true });
 })();
+
+/* ─── Conversão: clique em botão de WhatsApp → dataLayer (GTM) ─────────── */
+(function initWhatsappTracking() {
+  window.dataLayer = window.dataLayer || [];
+  document.querySelectorAll('a[href*="wa.me"]').forEach(a => {
+    a.addEventListener('click', () => {
+      window.dataLayer.push({
+        event: 'agendar_whatsapp',
+        cta_local: (a.getAttribute('aria-label') || a.textContent || 'whatsapp').trim().slice(0, 40)
+      });
+    });
+  });
+})();
