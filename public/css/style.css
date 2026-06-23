@@ -500,10 +500,10 @@ cite { font-style: normal; }
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.75rem, 5.5vw, 4.5rem);
+  font-size: clamp(1.875rem, 4vw, 2.75rem);
   font-weight: 500;
-  line-height: 1.02;
-  letter-spacing: -0.015em;
+  line-height: 1.16;
+  letter-spacing: -0.01em;
   color: var(--brown-900);
   margin-bottom: 1.25rem;
   animation: fadeInDown 0.8s var(--ease-out-expo) 0.2s both;
@@ -511,7 +511,6 @@ cite { font-style: normal; }
 .hero-title em {
   font-style: italic;
   color: var(--brown-600);
-  display: block;
 }
 
 .hero-divider {
@@ -540,7 +539,7 @@ cite { font-style: normal; }
   color: var(--brown-600);
   line-height: 1.7;
   margin-bottom: 2rem;
-  max-width: 480px;
+  max-width: 520px;
   animation: fadeInDown 0.8s var(--ease-out-expo) 0.36s both;
 }
 .hero-subtitle strong { color: var(--brown-800); font-weight: 600; }
@@ -551,7 +550,7 @@ cite { font-style: normal; }
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0;
   animation: fadeInDown 0.8s var(--ease-out-expo) 0.4s both;
 }
 
