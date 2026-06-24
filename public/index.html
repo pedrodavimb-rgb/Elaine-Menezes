@@ -3,12 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Google Tag Manager -->
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-M95JM4W2');</script>
+  <!-- Google Tag Manager — carregado no 1º gesto do usuário p/ não pesar no carregamento inicial.
+       A conversão segue garantida: quem clica no WhatsApp já rolou/tocou a tela antes, então o GTM
+       já está ativo. O timeout abaixo garante o disparo mesmo sem interação. -->
+  <script>
+  (function (w, d) {
+    w.dataLayer = w.dataLayer || [];
+    var started = false;
+    var evs = ['scroll', 'mousemove', 'touchstart', 'pointerdown', 'keydown', 'click'];
+    function start() {
+      if (started) return; started = true;
+      evs.forEach(function (e) { w.removeEventListener(e, start); });
+      w.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+      var f = d.getElementsByTagName('script')[0], j = d.createElement('script');
+      j.async = true;
+      j.src = 'https://www.googletagmanager.com/gtm.js?id=GTM-M95JM4W2';
+      f.parentNode.insertBefore(j, f);
+    }
+    evs.forEach(function (e) { w.addEventListener(e, start, { passive: true }); });
+    setTimeout(start, 4000);
+  })(window, document);
+  </script>
   <!-- End Google Tag Manager -->
   <meta name="description" content="Dra. Elaine Menezes — Médica Psiquiatra com Pós-graduação em Psiquiatria. Atendimento online humanizado para Depressão, Ansiedade e Transtornos do Humor. Agende sua consulta." />
   <meta name="keywords" content="psiquiatra online, consulta psiquiatria online, depressão, ansiedade, bipolaridade, transtornos do humor, Dra. Elaine Menezes" />
@@ -16,10 +31,8 @@
   <meta property="og:description" content="Atendimento psiquiátrico online humanizado e acolhedor. Agende sua consulta." />
   <meta property="og:type" content="website" />
   <title>Dra. Elaine Menezes — Psiquiatra Online</title>
-  <!-- Fontes auto-hospedadas (sem Google Fonts) + preload do que aparece primeiro -->
-  <link rel="preload" href="fonts/fraunces-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="fonts/fraunces-italic.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="preload" href="fonts/jost.woff2" as="font" type="font/woff2" crossorigin />
+  <!-- Fontes auto-hospedadas (sem Google Fonts). Sem preload de fonte: a foto da hero (elemento LCP)
+       ganha prioridade de banda; font-display:swap garante texto imediato com fonte de sistema. -->
   <link rel="preload" as="image" href="images/foto-hero.jpg?v=3" fetchpriority="high" />
   <link rel="stylesheet" href="css/fonts.css?v=1" />
   <link rel="stylesheet" href="css/style.css?v=15" />
@@ -115,7 +128,7 @@
         <div class="sobre-image" data-animate="fade-right">
           <div class="sobre-img-wrap">
             <img
-              src="images/foto-preta.jpg?v=2"
+              src="images/foto-preta.jpg?v=3"
               alt="Dra. Elaine Menezes em pose descontraída com estetoscópio"
               width="440"
               height="560"
