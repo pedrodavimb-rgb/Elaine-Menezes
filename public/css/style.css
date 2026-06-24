@@ -545,6 +545,9 @@ cite { font-style: normal; }
 .hero-subtitle strong { color: var(--brown-800); font-weight: 600; }
 .br-desktop { display: none; }
 @media (min-width: 768px) { .br-desktop { display: inline; } }
+/* Quebra extra só em telas estreitas: 2 linhas no desktop, 3 linhas limpas no celular */
+.br-mobile { display: none; }
+@media (max-width: 500px) { .br-mobile { display: inline; } }
 
 .hero-actions {
   display: flex;
